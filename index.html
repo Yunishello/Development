@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css"  href="css/s.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+</head>
+<body>
+	<div class="row">
+		<div class="col-3">
+			<div class="div2">
+				<h2 class="h2">JS Documentation</h2>
+				<div class="div">
+					<a href="index.html">Introduction</a>
+				</div>
+				<div class="div">
+					<a href="#syntax">Syntax</a>
+				</div>
+				<div class="div">
+					<a href="#hello">Hello world</a>
+				</div>
+				<div class="div">
+					<a href="#comment">Comment</a>
+				</div>
+				<div class="div">
+					<a href="#variables">Variables</a>
+				</div>
+				<div class="div">
+					<a href="#oprations">Operations</a>
+				</div>
+				<div class="div">
+					<a href="#arithmetic">Arithmetic</a>
+				</div>
+				<div class="div">
+					<a href="#assignment">Assignment</a>
+				</div>
+				<div class="div">
+					<a href="#constant">Constants</a>
+				</div>
+				<div class="div">
+					<a href="#scope">Scope</a>
+				</div>
+				<div class="div">
+					<a href="#type">Data Types</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-9 div4">
+			<h3 class="h3" align="center">Introduction</h3>
+			<p> Javascript is a cross-platform, object-oriented scripting language.It is a small and lightweight language?. inside a host environment (for example, a web browser). Javascript can be connected to the objects of its environment to provide programmatic control over them.</p><br>
+			<p> Javascript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, controls stuctures, and statements. Core Javascript can be extended for a variety of purposes by supplenting it with additional objects; for example:</p>
+			<ul>
+				<li>client-side javascript extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, client-side extensions allow an to place elements on an HTML form and respond to user events such as mouse clicks, form input, and page navigation.</li>
+				<li>Server-side JavaScript extends the core language by supplying objects relevant to running JavaScript on a server. For example, server-side Extensions allow an application to communicate with a database, provide continuity of information from one invocation to another of the application, or perform file manipulations on a server.</li>
+			</ul><br>
+			<h2>What you should already know</h2>
+			<p>This guild assumes you have following basic background:</p>
+			<ul>
+				<li>A general understanding of the internet and the world wide web(WWW).</li><br>
+				<li>Good working Knowledge of HyperText Markup Language (HTML).</li><br>
+				<li>Some programming exprience.</li>
+			</ul><br><br>
+			<div class="div3"></div>
+			<br><br><br><br>
+			<h3 class="h3" align="center" id="syntax">Syntax</h3>
+			<p> JavaScript can be implemented using JavaScript statements that are placed within
+				the, <b>< script>... < /script></b>HTML tags in a web page.
+			</p><br>
+			<p>You can place the < script> tags, containing your JavaScript, anywhere within you
+				web page, but it is normally recommended that you should keep it within the < head>
+				tags.
+			</p>
+			<p>The < script> tag alerts the browser program to start interpreting all the text between
+				these tags as a script. A simple syntax of your JavaScript will appear as follows.
+			</p>
+			<div class="div3">
+				<p>
+					< script...><br>
+						Your code<br>
+					< /script>
+				</p>
+			</div>
+			<h2 align="center">Attribute</h2>
+			<h4>Javascript has only two major attribute which are</h4>
+			<ol type="A">
+				<li><b>Language:</b><p>Which specify the actual scripting language you are using.</p></li>
+				<li><b>Type:</b><p>This indicate the scripting language in use which value is "text/javascript"</p></li>
+			</ol>
+			<p>Your code should look like this.</p>
+			<div class="div3">
+				<p>
+					< script language="javascript" type="text/javascript"><br>
+						Your codes<br>
+					< /script>
+				</p>
+			</div>
+			<br><br>
+			<div class="div3"></div>
+			<br><br><br><br>
+			<h3 class="h3" id="hello" align="center">Hello world!</h3>
+			<p><b>Example</b></p>
+			<div class="div3">
+				<p>
+					< html><br>
+					< body><br>
+					< script type="text/javascript" language="JavaScript"><br>
+					< !-- My first javascript code --><br>
+						document.write ("Hello world!")<br>
+					< /script><br>
+					< /body><br>
+					< /html>
+				</p>
+			</div>
+			<p><b>Output:</b></p>
+			<div class="div3">
+			<p>Hello world!</p>	
+			</div>
+			<p><b>Note:</b><br>
+						<p>
+							The text between < html> and < /html> describes an HTML document
+						</p>
+						<p>
+							The text between < body> and < /body> describes the visible page content
+						</p>
+						<p>
+							 we call a function document.write which writes a string into our HTML document. 
+						</p>
+					</p>
+			<br><br>
+			<div class="div3"></div>
+			<br><br><br><br><br>
+			<h3 class="h3" align="center" id="comment">Comment</h3>
+			<h4>Javascript support Java style and HTML styles of comment:</h4>
+			<ol>
+				<li>single line comment (  // comment  )</li>
+				<li>multiple line comment (/*  comment  */)</li>
+				<li>It support HTML opening comment < !-- but doesn't support the clossing -->, so it should be writen as //--></li>
+			</ol>
+			<p><b>Example</b></p>
+			<p>Here is the example on how to use comments in Javascript.</p>
+			<div class="div3">
+				<p>
+					< script type="text/javascript" language="javascript"><br>
+						< !-- This can also serve as a multiple line comment<br>
+						//This is a comment<br>
+
+						/*<br>
+						*this is <br>
+						* a multiple<br>
+						*line comment<br>
+						*/<br>
+						//--><br>
+					< /script>
+				</p>
+			</div>
+			<br><br>
+			<div class="div3"></div>
+			<br><br><br><br><br><br><br>
+			<h3 class="h3" align="center" id="variables">Variable</h3>
+			<p>Variables are container for storing data values.</p>
+			<p>variable need to be declared before use,it is declared with the <b>var</b> keyword.</p>
+			<b>Example</b>
+			<div class="div3">
+				<p>
+					< script type="text/javascript" language="javascript"><br>
+						var yunus, A;<br>
+					< /script>
+				</p>
+			</div>
+			<p>It can also be declare like this:</p>
+			<div class="div3">
+				<p>
+					< script type="text/javascript" language="javascript"><br>
+						var yunus;<br>
+						var A;<br>
+					< /script>
+				</p>
+			</div>
+			<p> <b>variable initialization:</b> is the storing of value in a variable.</p>
+			<p>You can do variable initialization at the time of variable creation or at a later point in time when you need
+				that variable.
+			</p>
+			<div class="div3">
+				<p>
+					< script type="text/javascript" language="javascript"><br>
+						var yunus="yusuf";<br>
+						var A;<br>
+						A =1234.0;<br>
+					< /script>
+				</p>
+			</div>
+			<br><br>
+			<div class="div3"></div>
+			<br><br><br><br><br><br><br>
+			<h3 class="h3" align="center" id="oprations">Operations</h3>
+			<P>
+				Operations are combination of <b>operands</b> and <b>operators</b> to give a define value.
+			</P>
+			<b>Given Example</b>
+			<p><b>6 + 3 is equal to 9</b>.The numbers 6 and 3 is the <b>Operands</b> while <b>+</b> is an Operator.</p>
+			<b> Operators supported by Javascript</b>
+			<ul>
+				<li>Logical or Relational Operators</li>
+				<li>Comparison Operators</li>
+				<li>Conditional or Tenary Operators</li>
+				<li>Assignment Operator</li>
+				<li>Arithmetics Operators</li>
+			</ul>
+			<h2>Logical Operators</h2>
+			<p>JavaScript supports the following logical operators: Assume variable A holds 10 and variable B holds 20, then:</p>
+			<table>
+				<tr class="tr">
+					<td>
+						<h3 class="h3a">Operator and Description</h3>
+					</td>
+				</tr>
+				<tr >
+					<td class="td">
+						<b>&& (Logical AND)</b>
+					</td>
+					<td class="td">
+						<p>If both the operands are non-zero, then the condition becomes true.</p>
+						<p><b>EX:</b> (A&&B) is true.</p>
+					</td>
+				</tr>
+				<tr >
+					<td class="td">
+						<b>|| (Logical OR)</b>
+					</td>
+					<td class="td">
+						<p>If any of  the two operands are non-zero, then the condition becomes true.</p>
+						<p><b>EX:</b> (A||B) is true.</p>
+					</td>
+				</tr>
+				<tr >
+					<td class="td">
+						<b>! (Logical NOT)</b>
+					</td>
+					<td class="td">
+						<p>Reverses the logical state of its operand. If a condition is true, then the Logical NOT operator will make it false.</p>
+						<p><b>EX:</b> ! (A&&B) is true.</p>
+					</td>
+				</tr>
+			</table>
+			<h2>Camparision Operators</h2>
+			<p>JavaScript supports the following logical operators: Assume variable A holds 10 and variable B holds 20, then:</p>
+			<table>
+				<tr class="tr" ">
+					<td >
+						<h3 class="h3a">Operator and Description</h3>
+					</td>
+				</tr>
+				<tr >
+					<td class="td">
+						<b>== (Equal)</b>
+					</td>
+					<td class="td">
+						<p>Checks if the value of two operands are equal or not, if yes, then the condition becomes true.</p>
+						<p><b>EX:</b>(A == B) is not true.C</p>
+					</td>
+				</tr>
+				<tr >
+					<td class="td">
+						<b>!= (Not Equal)</b>
+					</td>
+					<td class="td">
+						<p>Checks if the value of two operands are equal or not, if the values are not equal, then the condition becomes true.</p>
+						<p><b>EX:</b>(A != B) is true.</p>
+					</td>
+				</tr>
+				<tr >
+					<td class="td">
+						<b> > (Greater than)</b>
+					</td>
+					<td class="td">
+						<p>Checks if the value of the left operand is greater than the value of the right operand, if yes, then the condition becomes true.</p>
+						<p><b>EX:</b>(A > B) is not true.</p>
+					</td>
+				</tr>
+				<tr >
+					<td class="td">
+						<b>< (Less than)</b>
+					</td>
+					<td class="td">
+						<p>Checks if the value of the left operand is less than the value of the right operand, if yes, then the condition becomes true.</p>
+						<p><b>EX:</b>(A < B) is true.</p>
+					</td>
+				</tr>
+				<tr >
+					<td class="td">
+						<b>/= (Divide and Assignment)</b>
+					</td>
+					<td class="td">
+						<p>It divides the left operand with the right operand and assigns the result to the left operand.</p>
+						<p><b>EX:</b> C /= A is equivalent to C = C / A</p>
+					</td>
+				</tr>
+				<tr >
+					<td class="td">
+						<b>>= (Greater than or Equal to)</b>
+					</td>
+					<td class="td">
+						<p>Checks if the value of the left operand is greater than or equal to the value of the right operand, if yes, then the condition becomes true.</p>
+						<p><b>EX:</b> C(A >= B) is not true.</p>
+					</td>
+				</tr>
+				<tr >
+					<td class="td">
+						<b><= (Less than or Equal to)</b>
+					</td>
+					<td class="td">
+						<p>Checks if the value of the left operand is Less than or equal to the value of the right operand, if yes, then the condition is true.</p>
+						<p><b>EX:</b> C(A <= B) is true.</p>
+					</td>
+				</tr>
+			</table>
+			<h2>Assignment Operators</h2>
+			<p>JavaScript supports the following assignment operators:</p>
+			<table>
+				<tr class="tr">
+					<td >
+						<h3 class="h3a">Operator and Description</h3>
+					</td>
+				</tr>
+				<tr >
+					<td class="td">
+						<b>= (Simple Assignment)</b>
+					</td>
+					<td class="td">
+						<p>Assigns values from the right side operand to the left side operand</p>
+						<p><b>EX:</b> C = A + B will assign the value of A + B into C</p>
+					</td>
+				</tr>
+				<tr >
+					<td class="td">
+						<b>+= (Add and Assignment)</b>
+					</td>
+					<td class="td">
+						<p>It adds the right operand to the left operand and assigns the result to the left operand.</p>
+						<p><b>EX:</b>C += A is equivalent to C = C + A</p>
+					</td>
+				</tr>
+				<tr >
+					<td class="td">
+						<b>-= (Substract and Assignment)</b>
+					</td>
+					<td class="td">
+						<p>It subtracts the right operand from the left operand and assigns the result to the left operand.</p>
+						<p><b>EX:</b>C -= A is equivalent to C = C - A</p>
+					</td>
+				</tr>
+				<tr >
+					<td class="td">
+						<b>*= (Multiply and Assignment)</b>
+					</td>
+					<td class="td">
+						<p>It multiplies the right operand with the left operand and assigns the result to the left operand.</p>
+						<p><b>EX:</b> C *= A is equivalent to C = C * A</p>
+					</td>
+				</tr>
+				<tr >
+					<td class="td">
+						<b>/= (Divide and Assignment)</b>
+					</td>
+					<td class="td">
+						<p>It divides the left operand with the right operand and assigns the result to the left operand.</p>
+						<p><b>EX:</b> C /= A is equivalent to C = C / A</p>
+					</td>
+				</tr>
+				<tr >
+					<td class="td">
+						<b>%= (Divide and Assignment)</b>
+					</td>
+					<td class="td">
+						<p>It takes modulus using two operands and assigns the result to the left operand.</p>
+						<p><b>EX:</b> C %= A is equivalent to C = C % A</p>
+					</td>
+				</tr>
+			</table>
+			<h2>Conditional Operators (?:)</h2>
+			<p>The conditional operator first evaluates an expression for a true or false value and then executes one of the two given statements depending upon the result of the evaluation.</p>
+			<table>
+				<tr class="tr">
+					<td >
+						<h3 class="h3a">Operator and Description</h3>
+					</td>
+				</tr>
+				<tr >
+					<td class="td">
+						<b>?: (Conditional)</b>
+					</td>
+					<td class="td">
+						<p>Assigns values from the right side operand to the left side operand</p>
+						<p><b>EX:</b> C = A + B will assign the value of A + B into C</p>
+					</td>
+				</tr>
+			</table>
+			<br><br>
+			<div class="div3"></div>
+			<br><br><br><br><br><br><br>
+		</div>
+	</div>
+</body>
+</html>

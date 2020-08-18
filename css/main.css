@@ -1,0 +1,64 @@
+
+
+.div {
+	border: 2px #000000 solid;
+	margin: 10px;
+	padding: 10px;
+}
+.div:hover{
+	background-color: #00FF00;
+}
+a {
+	text-decoration: none;
+	padding:20px 85px 20px 30px;
+	color:  #0066ff;
+}
+
+
+.div2 {
+	position: fixed;
+}
+
+.div3 {
+	border: 1px solid #000000;
+}
+@media only screen and (max-width: 600px) {
+	
+	a{
+		padding: auto;
+		text-decoration: none;
+		color: #0066ff;
+	}
+	.div2 {
+		background-color: blue;
+		position: 0px;
+	}
+	.div{
+		margin: 0px;
+		padding: 0px;
+	}
+	.div4 {
+		margin-top: 300px;
+	}
+
+	div > a {
+		padding-left: 2px;
+	}
+}
+
+.h3 {
+	font-size: 30px;
+	background-color: #06ff06;
+	padding: 30px;
+	border: solid medium #0a0a0a;
+	
+}
+.h3a {
+	margin-left: 50px;
+}
+.tr{
+	background-color: #aaaaaa;
+}
+.td {
+	padding-left: 50px;
+}
